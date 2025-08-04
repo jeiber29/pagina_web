@@ -205,3 +205,18 @@ a.volver {
 a.volver:hover {
   background-color: #0056b3;
 }
+
+.video-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
