@@ -1,33 +1,585 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Volver al Inicio</title>
-  <style>
-    .volver {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rediseño de modelo de evaluación RED</title>
+    <link rel="stylesheet" href="pagina3.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rediseño de Modelo de Evaluación de Recursos Educativos Digitales</h1>
+    </header>
 
-    .volver:hover {
-      background-color: #0056b3;
-    }
+    <main>
+      <!-- Introducción -->
+      <section>
+        <h2>Introducción</h2>
+        <p>
+          El uso de Recursos Educativos Digitales (RED) en la educación básica
+          ha transformado de manera significativa los procesos de enseñanza y
+          aprendizaje, especialmente es áreas fundamentales como la Lengua
+          Castellana en grado cuarto. Plataforma como Google Classroom y
+          herramientas interactivas como Educaplay se han consolidado como
+          apoyos clave para dinamizar la práctica docente, fomentar la
+          motivación estudiantil y garantizar aprendizajes significativos. Sin
+          embargo, la incorporación de estos recursos exige contar con estos
+          modelos de evaluación sólidos y contextualizados que permitan valora
+          de forma objetiva su calidad, pertinencia y efectividad en el aula.
+        </p>
+        <p>
+          Los modelos tradicionales como SCREB-SCORE, REEVES y CODA ofrecen
+          marcos de referencia valiosos, pero presentan limitaciones al
+          aplicarse directamente en la práctica escolar: algunos son demasiados
+          generales, otros carecen de instrumentos prácticos o privilegian
+          aspectos técnicos sobre los pedagógicos. Esto genera la necesidad de
+          rediseñar un modelo adaptado al contexto real de la enseñanza
+          primaria, que considere simultáneamente criterios pedagógicos,
+          técnicos y comunicativos, y que sea fácil de aplicar por los docentes.
+        </p>
+        <p>
+          El presente trabajo propone el MERED-4 (Modelo de Evaluación de
+          Recursos Educativos Digitales para grado 4°), un modelo rediseñado que
+          integra lo mejor de los tres referentes seleccionados. Este modelo
+          busca aportar una herramienta práctica y confiable para la evaluación
+          de RED, de esta manera, el rediseño no solo busca mejorar la calidad
+          de los recursos seleccionados (Classroom y Educaplay), sino también
+          fortalecer la práctica docente, promover la innovación pedagógica y
+          garantizar que los recursos digitales utilizados respondan a las
+          necesidades reales de los estudiantes. En este sentido, el modelo
+          MERED-4 se convierte en un instrumento de apoyo fundamental para
+          avanzar hacia una educación más inclusiva, dinámica y acorde con los
+          retos de la era digital.
+        </p>
+      </section>
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
-  </style>
-</head>
-<body>
+      <!-- Problema y justificación -->
+      <section>
+        <h2>Problema y Justificación</h2>
+        <p>
+          La incorporación de Recursos Educativos Digitales (RE) en la enseñanza
+          de la Lengua Castellana en Educación Básica, específicamente en el
+          grado cuarto se ha convertido en una estrategia indispensable para
+          fortalecer el aprendizaje y responder a los desafíos de la sociedad
+          digital. Plataformas como Classroom y herramientas interactivas como
+          Educaplay han demostrado gran potencial en la organización de
+          contenidos, la motivación de los estudiantes y la promoción de
+          aprendizajes mas dinámicos. Sin embargo, su eficacia depende de que
+          los docentes cuenten con instrumentos confiables que permitan evaluar
+          de manera objetiva su pertinencia y calidad.
+        </p>
 
-  <a href="index.html" class="volver">← Volver al inicio</a>
+        <h3>Problemática</h3>
+        <ul>
+          <li>
+            Falta de integridad:
+            <ul>
+              <li>
+                Los modelos actuales no evalúan todos los aspectos relevantes de
+                u RED, como su impacto en el aprendizaje de los estudiantes.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Complejidad en la aplicación de modelos existentes.
+            <ul>
+              <li>
+                El modelo <strong>SREB-SCORE</strong> es muy amplio y detallado,
+                lo que dificulta su uso práctico en evaluaciones rápidas de
+                aula.
+              </li>
+              <li>
+                Los docentes de primaria requieren instrumentos más simples y
+                directos.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Ausencia de rúbricas clara en algunos modelos.
+            <ul>
+              <li>
+                El modelo <strong>REEVES</strong>, aunque es valioso en lo
+                pedagógico y comunicativo, no ofrece una rubrica estandarizada
+                que facilite la aplicación por parte de los docentes.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Enfoque parcial de algunos modelos.
+            <ul>
+              <li>
+                El modelo <strong>CODA</strong> privilegia aspectos técnicos
+                como la usabilidad, accesibilidad y reusabilidad, pero deja en
+                segundo plano la alineación curricular, la motivación y el
+                impacto pedagógico.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Falta de contextualización:
+            <ul>
+              <li>
+                Los modelos actuales no siempre tienen en cuenta el contexto
+                educativo especifico en el que se utiliza el RED.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Limitaciones en los RED usados en el aula.
+            <ul>
+              <li>
+                Recursos como
+                <strong>Google Classroom y Educaplay </strong> quieren evaluarse
+                en función de su pertinencia curricular, facilidad de usos,
+                motivación e inclusión, aspecto que no quedan completamente
+                cubiertos con un solo modelo. <br />
+                Frente a esta situación, se hace relevante el rediseño de un
+                modelo de evaluación híbrido, que integre los aportes más
+                significativos de los referentes estudiados, pero que a la vez
+                sea sencillo de aplicar, con criterios claros y una escala
+                estandarizada que oriente la toma de decisiones. El rediseño no
+                solo busca facilitar la labor docente, sino también asegurar que
+                los recursos digitales utilizados en el aula realmente
+                contribuyan al logro de los objetivos curriculares, favorezcan
+                la motivación y apoyen la inclusión educativa. <br />
+                De este modo, el modelo rediseñado se convierte en una
+                herramienta fundamental para mejorar la calidad educativa,
+                optimizar el uzo de las TIC garantizar que la incorporación de
+                RED responda a las necesidades reales de los estudiantes en su
+                proceso de aprendizaje.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-</body>
+      <!-- Objetivos -->
+      <section>
+        <h2>Objetivos</h2>
+        <ul>
+          Diseñar un modelo rediseñado de evaluación de Recursos Educativos
+          Digitales (RED), integrando criterios pedagógicos, técnicos y
+          comunicacionales a partir de los referentes SCREB-SCORE, REEVES y
+          CODA, para valorar de manera integral la calidad, pertinencia y
+          efectividad de los RED.
+          <br />
+          <li>
+            <strong>Analizar</strong> los aportes ilimitados de los modelos de
+            evaluación SCREB-SCORE, REEVES y CODA, mediante una revisión
+            comparativa, para fundamentar la construcción del modelo rediseñado.
+          </li>
+
+          <li>
+            <strong>Seleccionar</strong>
+            criterios de evaluación pertinentes, combinando aspectos pedagógicos
+            técnicos y comunicacionales, con el fin de elaborar un instrumento
+            integral y contextualizado en el aula.
+          </li>
+          <li>
+            <strong>Diseñar</strong>
+            una rubrica híbrida con indicadores claros y una escala de
+            valoración de 1 a 5, para facilitar la aplicación del modelo
+            rediseñado por parte de los docentes.
+          </li>
+          <li>
+            <strong>Aplicar</strong>
+            el modelo rediseñado en la evaluación de los recursos digitales
+            Google Classroom y Educaplay, para validar su pertinencia y utilidad
+            en la enseñanza.
+          </li>
+          <li>
+            <strong>Interpretar</strong>
+            los resultados obtenidos en la aplicación del modelo rediseñado,
+            para identificar fortalezas y oportunidades de mejora en los
+            recursos evaluados
+          </li>
+        </ul>
+      </section>
+
+      <!-- Marco conceptual -->
+      <section>
+        <h2>Marco Conceptual</h2>
+        <p>
+          Identifique conceptos asociados al modelo de evaluación a rediseñar
+          que sirvan de referente en el rediseño del modelo de evaluación de
+          RED. <br />
+          El rediseño del modelo de evaluación de Recursos Educativos Digitales
+          (RED) se fundamenta en la integración de tres modelos de referencia
+          ampliamente reconocidos en el campo de la evaluación de la calidad de
+          materiales educativos digitales:
+          <strong> REEVES, SREB-SCORE y CODA. </strong>
+          Estos modelos proporcionan conceptos, dimensiones y criterios que
+          permiten estructurar un modelo pertinente, integral y aplicable en el
+          contexto educativo.
+        </p>
+        <ul>
+          Modelos referentes.
+          <li>
+            <strong>Modelo SREB-SCORE:</strong> Propuesto por el Southern
+            Regional Education Board (2001), establece estándares para la
+            calidad de cursos y materiales digitales. Se centra en aspectos como
+            <strong>
+              contenido, diseño instruccional, tecnología, soporte y evaluación
+              del aprendizaje
+            </strong>
+            . Su principal aporte es ofrecer un marco integral de criterios,
+            aunque su aplicación resulta extensa y compleja en contextos de
+            educación básica.
+          </li>
+          <li>
+            <strong>Modelo REEVES:</strong>Presentado por Thomas Reeves (1997),
+            este modelo organiza la evaluación en torno a
+            <strong> dimensiones pedagógicas, sociales y técnicas </strong>
+            . Evalúa la
+            <strong>
+              efectividad, motivación, usabilidad y utilidad educativa
+            </strong>
+            de los recursos digitales. Su fortaleza es el enfoque pedagógico,
+            aunque carece de un instrumento estandarizado que facilite la
+            aplicación práctica en el aula.
+          </li>
+          <li>
+            <strong>Modelos CODA:</strong> Diseñado por la Universidad de los
+            Andes (2007), valora principalmente aspectos
+            <strong> técnicos y de accesibilidad </strong>
+            , como la
+            <strong>
+              reusabilidad, usabilidad, interoperabilidad y pertinencia
+            </strong>
+            . Se destaca por su practicidad en lo técnico, aunque se queda corto
+            en la valoración pedagógica y comunicativa.
+          </li>
+        </ul>
+
+        <h3>Conceptos asociados al rediseño</h3>
+        <ul>
+          <li>
+            Usabilidad y accesibilidad: facilidad de uso del recurso en
+            distintos dispositivos y condiciones, incluyendo criterios de
+            inclusión.
+          </li>
+          <li>
+            Diseño instruccional: organización de contenidos y actividades que
+            favorecen el aprendizaje.
+          </li>
+          <li>
+            Pertinencia pedagógica: alineación del RED con los objetivos
+            curriculares y las necesidades de los estudiantes.
+          </li>
+          <li>
+            Interactividad y motivación: grado en que el recurso promueve la
+            participación activa y el interés de los estudiantes.
+          </li>
+          <li>
+            Reusabilidad: posibilidad de aplicar el recurso en diferentes
+            contestos y situaciones de aprendizaje.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Metodología -->
+      <section>
+        <h2>Metodología</h2>
+        <p>
+          La metodología del modelo de evaluación de Recursos Educativos
+          Digitales (RED) rediseñado se fundamenta en la integración de los
+          aportes de los modelos
+          <strong> REEVES, SREB-SCORE y CODA </strong>
+          , los cuales ofrecen criterios complementarios para garantizar una
+          valoración integral.
+        </p>
+        <ol>
+          <p>El proceso metodológico se desarrolla en las siguientes fases.</p>
+          <li>
+            Selección del Recurso Educativo Digital (RED):
+            <ul>
+              <li>
+                Identificación de los recursos a evaluar (en este caso, Google
+                Classroom y Educaplay), considerando el nivel educativo, el área
+                de conocimiento y los objetivos de aprendizaje.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Definición de criterios de evaluación:
+            <ul>
+              A partir de los modelos seleccionados se adoptan y reorganizan los
+              siguientes criterios:
+              <li>
+                <strong>REEVES:</strong>
+                eficacia pedagógica, motivación, claridad didáctica.
+              </li>
+              <li>
+                <strong>SREB-SCORE:</strong>
+                pertinencia curricular, accesibilidad, facilidad de uso.
+              </li>
+              <li>
+                <strong>CODA:</strong> diseño, interactividad, usabilidad,
+                reusabilidad.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Construcción del instrumento de evaluación:
+            <ul>
+              <li>
+                Se elabora una rúbrica que integra los criterios mencionados,
+                organizados en dimensiones (pedagógica, técnica y
+                comunicacional). Cada criterio se valora en una escala de 1 a 5,
+                donde 1 corresponde a un nivel insuficiente y 5 a un nivel
+                excelente.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Aplicación del instrumento:
+            <ul>
+              <li>
+                Los evaluadores (docentes y estudiantes) aplican la rúbrica al
+                RED en un entorno real de uso, registrando los puntajes y
+                observaciones cualitativas en cada criterio.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Análisis de resultados:
+            <ul>
+              <li>
+                Se calculan promedios y se contrastan con las valoraciones
+                cualitativas. Este análisis permite identificar fortalezas,
+                debilidades y oportunidades de mejora en cada recurso educativo
+                digital.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Retroalimentación y mejora continua.
+            <ul>
+              <li>
+                Los resultados se utilizan para retroalimentar a los docentes y
+                diseñadores, promoviendo el rediseño de los recursos y su
+                adaptación a las necesidades del contexto educativo.
+              </li>
+            </ul>
+          </li>
+          <p>
+            Esta metodología asegura una evaluación integral y efectiva de los
+            Recursos Educativos Digitales, facilitando la toma de decisiones
+            informadas para para mejorar el proceso de enseñanza y aprendizaje
+            en el contexto educativos.
+          </p>
+        </ol>
+        <img
+          src="metodologia_modelo_evaluacion_red.png"
+          alt="Fases de la metodologia del modelo de evaluacion red"
+          width="500"
+        />
+      </section>
+      <!-- Métrica o Escala de Valoración -->
+      <section>
+        <h2>Métrica o Escala de Valoración</h2>
+
+        <p>
+          Para el diseño del instrumento de evaluación se emplea una escala de
+          tipo Likert de 5 niveles, que permite valorar de manera gradual el
+          cumplimiento de cada criterio de evaluación definido en el modelo
+          rediseñado. Esta escala se selecciona por su facilidad de aplicación,
+          claridad en la interpretación y pertinencia en procesos de evaluación
+          educativa.
+        </p>
+        <h4>Escala de valoración.</h4>
+        <p>
+          La escala de valoración puede variar en detalle según las necesidades
+          específicas del curso y los objetivos de aprendizaje. Una escala
+          comúnmente utilizada en la escala de calificaciones de cinco puntos,
+          aquí se presenta una escala detallada de cinco niveles que es tanto
+          manejable como informativa.
+        </p>
+
+        <img src="cap7.png" alt="" />
+
+        <h3>Justificación de la Métrica</h3>
+        <ul>
+          <li>
+            Permite valorar cualitativa y cuantitativamente el desempeño de los
+            RED.
+          </li>
+          <li>
+            Es flexible y de fácil comprensión para docentes y estudiantes.
+          </li>
+          <li>
+            Favorece la comparación entre diferentes recursos digitales,
+            estableciendo fortalezas y oportunidades de mejora.
+          </li>
+          <li>
+            Se ajusta a los criterios de evaluación propuestos en el rediseño,
+            ya que cada uno puede ser medido con un rango progresivo de
+            desempeño.
+          </li>
+        </ul>
+
+        <p>
+          De esta manera, la escala de 1 a 5 facilita la construcción de una
+          rúbrica práctica, clara y objetiva, garantizando que la evaluación de
+          los Recursos Educativos Digitales sea integral y coherente con las
+          necesidades del contexto escolar.
+        </p>
+      </section>
+
+      <!-- Instrumento de Evaluación Rediseñado -->
+      <section>
+        <h2>Instrumento de Evaluación Rediseñado</h2>
+        <p>
+          El instrumento de evaluación diseñado para valorar Recursos Educativos
+          Digitales (RED) integra criterios pedagógicos, técnicos y
+          comunicacionales provenientes de los modelos REEVES, SREB-SCORE y
+          CODA, adaptados a las necesidades de la educación básica.
+        </p>
+        <img src="cap1.png" />
+        <img src="cap2.png" alt="" />
+        <img src="cap3.png" alt="" />
+        <h4>RED 1.</h4>
+        <img src="cap4.png" alt="" />
+        <h4>RED 2.</h4>
+        <img src="cap5.png" alt="" />
+      </section>
+      <section>
+        <h2>Aplicación de la rúbrica.</h2>
+        <ul>
+          <li>
+            Cada puntaje se evalúa con un puntaje entre 1 (muy bajo) y 5 (muy
+            alto) según la escala definida
+          </li>
+          <li>
+            Se recomienda incluir observaciones cualitativas en cada criterio
+            para complementar la valoración numérica.
+          </li>
+          <li>
+            • El puntaje final se obtiene sumando los valores de todos los
+            criterios, lo que permite clasificar el recurso educativo en niveles
+            de calidad:
+          </li>
+        </ul>
+        <p>
+          <strong> Ventajas de la aplicación del modelo de evaluación: </strong>
+          El modelo MERED-4 permite realizar una valoración integral de los
+          Recursos Educativos Digitales, considerando aspectos pedagógicos,
+          técnicos y comunicacionales. Facilita la comparación entre diferentes
+          recursos mediante una rúbrica estandarizada con escala de 1 a 5,
+          garantizando pertinencia pedagógica, usabilidad, accesibilidad y
+          coherencia curricular. Asimismo, promueve la retroalimentación y la
+          mejora continua, lo que contribuye a fortalecer el diseño y aplicación
+          de los RED en contextos educativos diversos.
+        </p>
+        <p>
+          <strong>
+            Desventajas de la aplicación del modelo de evaluación:
+          </strong>
+          Aunque es un instrumento integral, su aplicación puede requerir
+          capacitaciones docentes para interpretar adecuadamente los criterios.
+          En algunos casos puede dejar de lado aspectos cualitativos como la
+          creatividad o el progreso individual de cada estudiante, y demanda
+          tiempo adicional para la evaluación detallada de los recursos. Además,
+          depende de la disponibilidad tecnológica (acceso a internet y
+          dispositivos), lo que puede limitar su implementación en ciertos
+          contextos escolares.
+        </p>
+        <h4>Analís de preguntas.</h4>
+        <h4>
+          ¿Cómo el modelo rediseñado permite evaluar el RED de manera adecuado?
+        </h4>
+        <p>
+          El modelo MERED-4 permite una evaluación más completa porque integra
+          criterios pedagógicos, técnicos y comunicativos en una única rúbrica.
+          Esto facilita al docente valorar rápidamente la pertinencia,
+          usabilidad y motivación en su contexto de aula.
+        </p>
+        <h4>¿Qué ventaja tiene frente a otros modelos?</h4>
+        <p>
+          El MERED-4 se diferencia de otros modelos porque integra los aportes
+          más relevantes de Reeves, SREB-SCORE y COdA en un solo instrumento,
+          adaptado al contexto escolar. Su principal ventaja es que resulta
+          práctico y contextualizado, permitiendo valorar aspectos clave como la
+          interactividad, la accesibilidad y la reusabilidad, que en otros
+          modelos aparecen dispersos o poco detallados. Además, es más flexible
+          y sencillo de aplicar, lo que lo convierte en una herramienta útil
+          para los docentes en su práctica cotidiana.
+        </p>
+        <h4>¿Qué elementos deben mejorarse?</h4>
+        <p>
+          En el aspecto <strong>técnico</strong>, se requiere fortalecer
+          criterios de accesibilidad, de modo que el modelo contemple de manera
+          más explícita la inclusión de estudiantes con necesidades especiales.
+        </p>
+        <p>
+          En el ámbito <strong>pedagógico</strong>, puede incorporarse una mayor
+          precisión en la evaluación de la motivación, ya que esta influye
+          directamente en el compromiso de los estudiantes.
+        </p>
+        <p>
+          En cuanto al componente <strong>comunicacional</strong>, sería
+          conveniente ampliar los indicadores relacionados con la interacción
+          colaborativa y la retroalimentación entre pares, aspectos esenciales
+          en entornos de aprendizaje digital.
+        </p>
+      </section>
+      <section>
+        <h2>Conclusión</h2>
+        <p>
+          El rediseño del modelo de evaluación de Recursos Educativos Digitales
+          (MERED-4) permitió entregar los aportes más relevantes de los modelos
+          REEVES, SCREB-SCORE y COdA en un instrumento práctico,
+          contextualizados y fácil de aplicar en la educación básica. La
+          aplicación de la rúbrica a los recursos Educaplay y Google Classroom
+          evidenció que ambos son herramientas pertinentes y eficaces, con
+          fortalezas en usabilidad, accesibilidad y coherencia pedagógica,
+          aunque con limitaciones en motivación visual e interactiva en el caso
+          de Classroom. El modelo rediseñado demostró su utilidad para orientar
+          a los docentes en la selección y uso de RED de calidad, contribuyendo
+          así al fortalecimiento de la práctica pedagógica, la innovación
+          educativa y la inclusión de los estudiantes en entornos digitales.
+        </p>
+      </section>
+      <section>
+        <h2>Referencias</h2>
+        <ul>
+          <li>
+            Cabero, J., & Llorente, M. C. (2015). La evaluación de materiales
+            didácticos digitales: propuesta de un instrumento de análisis.
+            <em>Revista de Educación a Distancia, 45(1), 1–28.</em>
+            <a
+              href="https://revistas.um.es/red/article/view/234121"
+              target="_blank"
+              >https://revistas.um.es/red/article/view/234121</a
+            >
+          </li>
+          <li>
+            Collazos, C., & Guerrero, L. (2007). Modelo COdA para la evaluación
+            de objetos de aprendizaje. Universidad de los Andes.
+          </li>
+          <li>
+            García-Peñalvo, F. J. (2017). La evaluación de la calidad en objetos
+            y recursos educativos digitales.
+            <em>Education in the Knowledge Society, 18(2), 7–20.</em>
+            <a href="https://doi.org/10.14201/eks2017182720" target="_blank"
+              >https://doi.org/10.14201/eks2017182720</a
+            >
+          </li>
+          <li>
+            Norma UNE 71362. (2017). Calidad de los materiales educativos
+            digitales. Asociación Española de Normalización (UNE).
+          </li>
+          <li>
+            Reeves, T. C. (1997). Evaluating what really matters in
+            computer-based education. University of Georgia.
+          </li>
+          <li>
+            Southern Regional Education Board (SREB). (2001). Standards for
+            Quality Online Courses. SREB Educational Technology Cooperative.
+          </li>
+        </ul>
+      </section>
+
+      <a href="index.html" class="volver">← Volver al inicio</a>
+    </main>
+  </body>
 </html>
